@@ -1,1 +1,19 @@
-# recipe-collection
+Последовательность запуска:
+1. Создать таблицу в постгрес:
+CREATE TABLE recipe_table( id SERIAL PRIMARY KEY,  name VARCHAR(50), region VARCHAR(30), type VARCHAR(30), difficulty VARCHAR(30), time int, instructions json, tags json, calories int, servings int, description VARCHAR(250), img VARCHAR(120));
+Cчитал данные из csv файла:
+COPY public.recipe_table(id, name, region, type, difficulty, time, instructions , tags, calories , servings , description , img)
+FROM '.\data_recipe_new.csv'
+DELIMITER ';'
+CSV HEADER;
+
+Файл data_recipe_new.csv находится в корне проекта node-postgres.
+
+2. Ввести креды клиента в файле model_dish.js по которому досупна БД.
+
+3. Запустить исполняемый файл проекта node-postgres: index.js. Бэк доступен по localhost:3001
+
+4. Открыть проект фронта, инсталировать библиотеку "react-router-dom" [yarn add react-router-dom], запустить проект [yarn start]
+Если нет ярна, то [npm install --global yarn], [yarn create react-app *project-name*]
+
+Фронт доступен по localhost:3000
