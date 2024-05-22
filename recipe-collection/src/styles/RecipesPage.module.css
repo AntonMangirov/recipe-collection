@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.woff") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto-Medium"),
+    url("../fonts/Roboto-Medium.woff") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"), url("../fonts/Roboto-Bold.woff") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  background-color: #efefef;
+  font-family: Roboto-Regular;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 22px 24px;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+  box-sizing: border-box;
+  font-family: Roboto-Medium;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.filterSection {
+  flex-basis: 25%;
+  padding: 24px;
+  background-color: #fff;
+}
+
+.filterImage {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  text-align: center;
+}
+
+.filterInfo {
+  margin-bottom: 14px;
+  padding: 24px;
+  line-height: 18px;
+}
+
+.filterSetting {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.filterSettingItem {
+  display: inline-block;
+  margin-bottom: 17.33px;
+}
+
+.filterInput {
+  width: 70%;
+}
+
+.filterLable {
+  font-family: Roboto-Bold;
+  font-size: 16px;
+  text-align: right;
+  vertical-align: middle;
+  white-space: pre-wrap;
+}
+
+.button {
+  display: inline-block;
+  width: 18%;
+  padding: 8px 0;
+  margin-top: 10px;
+  background-color: #1890ff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0084ff;
+}
+
+.recipesSection {
+  flex-basis: 75%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.button {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+.activeButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.clear {
+  margin-left: 24px;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  color: #1890ff;
+  background-color: #fff;
+}
+
+select {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.rcipeRandom {
+  margin-left: 24px;
+  text-align: left;
+  color: #808080;
+}
+
+.randomButton {
+  border: 1px solid #808080;
+  padding: 4px 15px;
+  color: #808080;
+}
+
+.recipesContainer {
+  width: 75%;
+  background-color: #f0f0f0;
+}
+
+.recipesHeader {
+  margin-left: 12px;
+  width: 100%;
+  background-color: #fff;
+  padding: 16px 24px;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  box-sizing: border-box;
+  font-family: Roboto-Medium;
+}
+
+.recipeCount {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #000;
+  opacity: 45%;
+}

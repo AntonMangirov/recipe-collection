@@ -1,0 +1,32 @@
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.pageItem {
+  margin: 0 5px;
+}
+
+.pageLink {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.pageLink:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.pageEllipsis {
+  display: block;
+  padding: 8px 0px;
+  text-decoration: none;
+  color: #a5a5a5;
+  font-weight: 100;
+}

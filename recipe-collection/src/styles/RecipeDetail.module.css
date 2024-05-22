@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.woff") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Medium"),
+    url("../fonts/Roboto-Medium.woff") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Bold"), url("../fonts/Roboto-Bold.woff") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+}
+
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #efefef;
+  font-family: Roboto-Medium;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  margin: 0 0 12px 0;
+  height: 72px;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.linkBack {
+  margin: 28px 6px 28px 24px;
+}
+
+.header h1 {
+  margin: 22px 0;
+  font-family: Roboto-Medium;
+  font-size: 24px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  min-height: 852px;
+}
+
+.leftColumn,
+.middleColumn {
+  width: 25%;
+}
+
+.columInfo {
+  margin-bottom: 12px;
+  background-color: #fff;
+}
+
+.columCalorie {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  padding: 0;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.columItemLast {
+  flex-grow: 1;
+  margin-bottom: 12px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.columLabel {
+  margin: 0;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+  font-family: Roboto-Medium;
+  font-size: 16px;
+}
+
+.columResult {
+  margin: 0;
+  padding: 24px;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+}
+
+.calorieResult {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.calorieGram {
+  margin-top: 8px;
+  color: #000;
+  opacity: 45%;
+}
+
+.columTags {
+  margin: 0;
+  padding: 24px;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #000;
+  opacity: 45%;
+}
+
+.portions {
+  margin: 0;
+  padding: 24px;
+  font-size: 20px;
+  font-family: Roboto-Bold;
+}
+
+.columnDescription {
+  margin: 0;
+  padding: 24px;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+}
+
+.recipeImage {
+  width: 48%;
+  height: auto;
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.listMarker {
+  border-radius: 50%;
+  border: 2px solid #1890ff;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  margin-right: 10px;
+}

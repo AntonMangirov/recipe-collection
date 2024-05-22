@@ -1,0 +1,49 @@
+.card {
+  display: inline-block;
+  width: 430px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.cardPresentation {
+  float: left;
+  margin-left: 1%;
+  width: 45%;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: left;
+  padding: 24px;
+  width: 42%;
+}
+
+.cardHeader {
+  margin: 0;
+  height: 15%;
+}
+
+p {
+  margin: 9px 0;
+}
+
+.cardImage {
+  width: 100%;
+  max-width: 220px;
+  height: 85%;
+  object-fit: scale-down;
+}
+
+.cardInfo h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.cardInfo p {
+  font-size: 14px;
+  color: #666;
+}
